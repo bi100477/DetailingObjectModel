@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutputPath>C:\Users\baris\Documents\irhan\cs\bin\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controls\ProfileControl.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="TypesInterface">
+      <HintPath>..\bin\TypesInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="TypesUI">
+      <HintPath>..\bin\TypesUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
